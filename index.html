@@ -5,37 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Separador de Nomes</title>
+    <title>Matrícula Virtual</title>
 
     <link href="style.css" rel="stylesheet" type="text/css"/>
-    <script src="script.js"></script>  
 </head>
 <body>
-    <h1>SEPARADOR DE NOMES 3000!</h1>
+    <h1>Escola Virtual</h1>
+    <h2>Formulário de Pré-Matrícula</h2>
 
     <div id="container">
+        <form id="formzin">
         <div id="bloco">
-            <input type="text" id="completo" placeholder="Insira Nome e Sobrenome">
-            <button onclick="redefinir()" id="button2">Redefinir D:</button> 
+            <h3>Dados Pessoais</h4>
+            <label for="nome" class="esq">Nome do Aluno:</label>
+            <input type="text" id="nome" name="nome">
+        </br>
+            <label for="diaNasc" class="esq">Data de Nascimento:</label>
+            <input type="date" id="diaNasc" name="diaNasc">
+        </br>
+            <label for="mae" class="esq">Nome da Mãe:</label>
+            <input type="text" id="mae" name="mae">
+        </br>
+            <label for="pai" class="esq">Nome do Pai:</label>
+            <input type="text" id="pai" name="pai">
+        </br>
+            <label for="ddd" class="esq">DDD:</label>
+            <input type="text" id="ddd" name="ddd">
+            <label for="tel">Telefone:</label>
+            <input type="text" id="tel" name="tel">
+        </br>
+            <label for="email" class="esq">E-Mail:</label>
+            <input type="text" id="email" name="email">
         </div>
-        <div id="bloco">
-            <button onclick="separaNome()" id="button1">SEPARAR NOMES!!! >>>></button>
+        <div id="buttons">
+            <button onclick="limpaForm()">Limpar Campos</button>
+            <button onclick="validar()" >Enviar Dados</button>
         </div>
-        <div id="bloco">
-            <input type="text" id="nome" placeholder="Nome">
-
-            <input type="text" id="sob" placeholder="Sobrenome">
-        </div>
+        </form>
     </div>
-
-    
-
-    
-
-    
-
-    
-
-
+    <script src="script.js"></script>  
 </body>
 </html>

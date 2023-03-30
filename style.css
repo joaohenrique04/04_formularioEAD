@@ -9,11 +9,19 @@ html, body {
     width: 100%;
 }
 
-h1 {
-    color: blue;
+h1, h2 {
+    color: black;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif ;
-    margin-top: 3%;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 1%;
+}
+
+h3{
+    margin-left: 2%;
+}
+
+.esq {
+    margin-left: 35%;
 }
 
 #container {
@@ -27,29 +35,37 @@ h1 {
 
 #bloco {
     display: inline-block;
-    width:33%;
-    height: 100%;
+    width:100%;
+    height: 40%;
+    box-sizing: border-box;
+    /* text-align: center; */
+    background-color: aqua;
+    line-height: 30px;
+    border: 2px solid black;
+}
+
+#buttons {
+    display: inline-block;
+    width:100%;
+    height: 20%;
     box-sizing: border-box;
     text-align: center;
-    line-height: 200px;
+    background-color: rosybrown;
+    line-height: 30px;
+    border: 2px solid black;
+}
+
+#nome, #mae, #pai, #email {
+    width: 300px;
+}
+
+#ddd {
+    width: 50px;
 }
 
 button {
-    padding: 3%;
-    margin: 10%;
-    color: antiquewhite;
-}
-
-input {
-    padding: 3%;
-    margin: 10%;
-}
-
-#button1 {
-    width: 60%;
-    background-color: indigo;
-}
-
-#button2 {
-    background-color:darkblue;
+    margin: 100px;
+    width: 120px;
+    height: 40px;
+    border-end-end-radius: 10px;
 }
